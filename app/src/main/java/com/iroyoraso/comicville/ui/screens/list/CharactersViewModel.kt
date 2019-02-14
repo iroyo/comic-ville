@@ -1,16 +1,15 @@
 package com.iroyoraso.comicville.ui.screens.list
 
-import android.util.Log
 import androidx.lifecycle.ViewModel
-import com.iroyoraso.comicville.BuildConfig
+import com.iroyoraso.comicville.core.LoadCharacters
 
 /**
  * Created by iroyo on 13/02/2019. iroyoraso@gmail.com
  */
-class CharactersViewModel() : ViewModel() {
+class CharactersViewModel(private val loadCharacters: LoadCharacters) : ViewModel() {
 
     init {
-        Log.d("ISAAC", "INIT")
+
     }
 
 }

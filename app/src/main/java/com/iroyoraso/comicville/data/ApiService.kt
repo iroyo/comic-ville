@@ -12,6 +12,6 @@ import retrofit2.http.Query
 interface ApiService {
 
     @GET("characters")
-    fun characters(@Query("offset") offset: Int, @Query("limit") limit: Int) : Deferred<CharactersResponse>
+    fun characters(@Query("offset") offset: Int, @Query("limit") limit: Int = 10) : Deferred<CharactersResponse>
 
 }

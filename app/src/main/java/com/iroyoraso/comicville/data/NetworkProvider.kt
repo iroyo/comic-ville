@@ -47,7 +47,7 @@ fun createRetrofit(
     okHttpClient: OkHttpClient,
     callAdapterFactory: CallAdapter.Factory,
     converterFactory: Converter.Factory
-) = Retrofit.Builder()
+): Retrofit = Retrofit.Builder()
     .baseUrl(BuildConfig.API_URL)
     .addCallAdapterFactory(callAdapterFactory)
     .addConverterFactory(converterFactory)
