@@ -10,6 +10,8 @@ android {
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
+
+        buildConfigField "String", "API_URL", "\"https://comicvine.gamespot.com/api/\""
     }
     buildTypes {
         debug {
@@ -41,6 +43,8 @@ dependencies {
     // Retrofit
     implementation 'com.squareup.retrofit2:retrofit:2.5.0'
     implementation 'com.squareup.retrofit2:converter-moshi:2.5.0'
+
+    implementation 'com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:0.9.2'
 
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.1.1'
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.1.1'
