@@ -9,7 +9,7 @@ import retrofit2.http.Query
  * DOONAMIS
  * Created by iroyo on 14/02/2019.
  */
-interface ApiService {
+interface CharactersApi {
 
     @GET("characters")
     fun characters(@Query("offset") offset: Int, @Query("limit") limit: Int = 10) : Deferred<CharactersResponse>
