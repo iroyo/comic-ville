@@ -1,4 +1,4 @@
-package com.iroyoraso.comicville.graph
+package com.iroyoraso.comicville.base
 
 import com.iroyoraso.comicville.data.CharactersApi
 

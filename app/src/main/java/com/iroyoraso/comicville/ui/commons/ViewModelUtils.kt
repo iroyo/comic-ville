@@ -10,11 +10,11 @@ import androidx.lifecycle.ViewModelProviders
  */
 
 
-inline fun <reified T : ViewModel> FragmentActivity.getViewModel(noinline creator: (() -> T)): Lazy<T> {
+inline fun <reified T : ViewModel> FragmentActivity.injectFrom(noinline creator: (() -> T)): Lazy<T> {
     return lazy { ViewModelProviders.of(this, ViewModelFactory(creator)).get(T::class.java) }
 }
 
 
-inline fun <reified T : ViewModel> Fragment.getViewModel(noinline creator: (() -> T)): Lazy<T> {
+inline fun <reified T : ViewModel> Fragment.injectFrom(noinline creator: (() -> T)): Lazy<T> {
     return lazy { ViewModelProviders.of(this, ViewModelFactory(creator)).get(T::class.java) }
 }

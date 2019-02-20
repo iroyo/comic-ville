@@ -6,7 +6,7 @@ import com.squareup.moshi.Json
  * DOONAMIS
  * Created by iroyo on 14/02/2019.
  */
-data class Character(
+data class CharacterScheme(
     @Json(name = "id") val id: Int,
     @Json(name = "name") val heroName: String?,
     @Json(name = "real_name") val realName: String?,

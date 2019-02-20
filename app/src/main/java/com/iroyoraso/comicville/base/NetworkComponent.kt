@@ -1,10 +1,6 @@
-package com.iroyoraso.comicville.graph
+package com.iroyoraso.comicville.base
 
-import com.iroyoraso.comicville.data.network.QueryInterceptor
 import okhttp3.OkHttpClient
-import okhttp3.logging.HttpLoggingInterceptor
-import retrofit2.CallAdapter
-import retrofit2.Converter
 import retrofit2.Retrofit
 
 /**

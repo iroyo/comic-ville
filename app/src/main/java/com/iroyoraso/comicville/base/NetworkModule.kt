@@ -1,7 +1,7 @@
-package com.iroyoraso.comicville.graph
+package com.iroyoraso.comicville.base
 
 import com.iroyoraso.comicville.BuildConfig
-import com.iroyoraso.comicville.data.network.QueryInterceptor
+import com.iroyoraso.comicville.data.network.QueryParamsInterceptor
 import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
@@ -20,7 +20,7 @@ object NetworkModule : NetworkComponent{
 
     override val okHttpClient: OkHttpClient = OkHttpClient.Builder()
         .addInterceptor(HttpLoggingInterceptor().setLevel(level))
-        .addInterceptor(QueryInterceptor())
+        .addInterceptor(QueryParamsInterceptor())
         .build()
 
     override val retrofit: Retrofit = Retrofit.Builder()
@@ -29,6 +29,5 @@ object NetworkModule : NetworkComponent{
         .baseUrl(BuildConfig.API_URL)
         .client(okHttpClient)
         .build()
-
 
 }

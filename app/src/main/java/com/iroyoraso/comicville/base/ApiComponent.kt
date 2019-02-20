@@ -1,4 +1,4 @@
-package com.iroyoraso.comicville.graph
+package com.iroyoraso.comicville.base
 
 /**
  * Created by iroyo on 16/2/19.

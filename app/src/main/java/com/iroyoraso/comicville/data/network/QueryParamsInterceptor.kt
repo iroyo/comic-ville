@@ -8,7 +8,7 @@ import okhttp3.Response
  * Created by iroyo on 15/2/19.
  * Mail: iroyoraso@gmail.com
  */
-class QueryInterceptor : Interceptor {
+class QueryParamsInterceptor : Interceptor {
 
     override fun intercept(chain: Interceptor.Chain): Response {
         val request = chain.request()
